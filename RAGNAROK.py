@@ -226,8 +226,8 @@ def handle_bgmi(message):
         if user_id not in admin_id:
             if user_id in bgmi_cooldown:
                 time_since_last_attack = (datetime.datetime.now() - bgmi_cooldown[user_id]).seconds
-                if time_since_last_attack < 300:
-                    remaining_time = 300 - time_since_last_attack
+                if time_since_last_attack < 2000:
+                    remaining_time = 2000 - time_since_last_attack
                     response = f"You are on cooldown. Please wait {remaining_time} seconds before running the /attack command again."
                     bot.reply_to(message, response)
                 return
@@ -239,8 +239,8 @@ def handle_bgmi(message):
             target = command[1]
             port = int(command[2])  # Convert time to integer
             time = int(command[3])  # Convert port to integer
-            if time > 300:
-                response = "Error: Time interval must be less than 120."
+            if time > 2000:
+                response = "Error: Time interval must be less than 5000."
             else:
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
@@ -324,9 +324,9 @@ def welcome_plan(message):
     response = f'''{user_name}, Brother Only 1 Plan Is Powerfull Then Any Other Ddos !!:
 
 Vip :
--> Attack Time : 200 (S)
+-> Attack Time : 2000 (S)
 > After Attack Limit : 2 Min
--> Concurrents Attack : 300
+-> Concurrents Attack : 5000
 
 Pr-ice List:
 per match--> 30 Rs
