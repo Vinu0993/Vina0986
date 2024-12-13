@@ -344,7 +344,7 @@ def welcome_plan(message):
     user_name = message.from_user.first_name
     response = f'''{user_name}, Admin Commands Are Here!!:
 
-/add <userId> : Add a User.
+/add 1408776543 99days
 /remove <userid> Remove a User.
 /allusers : Authorised Users Lists.
 /logs : All Users Logs.
