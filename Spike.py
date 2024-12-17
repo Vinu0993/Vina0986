@@ -1,11 +1,7 @@
-import os
-import socket
-import subprocess
 import asyncio
-import pytz
-import platform
 import random
 import string
+import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext, filters, MessageHandler
 from pymongo import MongoClient
