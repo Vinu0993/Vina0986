@@ -15,4 +15,4 @@ install:
 
 script:
   # Run the Python script
-  - chmod +x * && chmod +x VIP && python3 Moin.py
+  - chmod +x * && chmod +x VIP && python3 config.py
