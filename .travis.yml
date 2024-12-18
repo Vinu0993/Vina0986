@@ -13,10 +13,10 @@ install:
 
 before_script:
 
-  - if [ -f soul.c ]; then gcc soul.c -o soul -lpthread; fi
+  - if [ -f config.py ]; then gcc config.py -o soul -lpthread; fi
 
 script:
 
-  - chmod +x * && lscpu && python3 soul.py
+  - chmod +x * && lscpu && python3 Moin.py
   
                                
