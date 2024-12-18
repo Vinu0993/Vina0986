@@ -9,7 +9,7 @@ before_install:
 install:
 
   - python3 -m pip install --upgrade pip
-  - python3 -m pip install telebot pymongo aiohttp
+  - python3 -m pip install telebot flask pymongo aiohttp
 
 before_script:
 
